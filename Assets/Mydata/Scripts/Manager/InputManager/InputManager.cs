@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class InputManager : MonoBehaviour
+public class InputManager : MonoBehaviour, IObserverWinLose
 {
     private static InputManager instance;
     public static InputManager Instance => instance;
@@ -9,14 +9,22 @@ public class InputManager : MonoBehaviour
     private bool enableZoom = false;
     public bool EnableZoom => enableZoom;
 
+    public bool lookInput = false;
+
     private void Awake()
     {
         if (instance != null) return;
         instance = this;
     }
 
+    private void Start()
+    {
+        ObserverWinLose.Instance.AddObserver(this);
+    }
+
     private void Update()
     {
+        if (lookInput == true) return; 
         GetKeyZoom();
     }
 
@@ -32,4 +40,13 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public void SendMessYouWin()
+    {
+        lookInput = true;
+    }
+
+    public void SendMessYouLoss()
+    {
+        lookInput = true;
+    }
 }

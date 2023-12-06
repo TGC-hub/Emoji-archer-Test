@@ -1,16 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class DetroyEnemies : MonoBehaviour
+public class DetroyEnemies : MyMonoBehavior
 {
+    [SerializeField] protected CheckerEnemy checkerEnemy;
+    protected override void LoadComponents()
+    {
+        base.LoadComponents();
+        LoadEnemies();
+    }
+    protected virtual void LoadEnemies()
+    {
+        if (checkerEnemy != null) return;
+        checkerEnemy = transform.parent.parent.GetComponent<CheckerEnemy>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Arrow"))
         {
             Destroy(this.transform.parent.gameObject);
             ObserverShot.Instance.PlayerFinishShoot();
-            ObserverEnemyDeath.Instance.KillEnemy();
+            checkerEnemy.enemies.Remove(this.transform.parent);
+            checkerEnemy.nextFloor = true;
         }
     }
 }

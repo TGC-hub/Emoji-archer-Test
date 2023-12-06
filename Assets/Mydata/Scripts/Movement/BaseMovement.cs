@@ -14,15 +14,24 @@ public class BaseMovement : MyMonoBehavior
     }
     protected virtual void FixedUpdate()
     {
-        if (waypoints.Length == 0)
-        {
-            return;
-        }
+        if (waypoints.Length == 0) return;
+        OnMove();
+        LookAt();
+        ChangePoint();
+    }
 
+    protected virtual void OnMove()
+    {
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].position, speed * Time.fixedDeltaTime);
+    }
 
+    protected virtual void LookAt()
+    {
         transform.LookAt(waypoints[currentWaypointIndex].position);
+    }
 
+    protected virtual void ChangePoint()
+    {
         float distanceToTarget = Vector3.Distance(transform.position, waypoints[currentWaypointIndex].position);
 
         if (distanceToTarget < 0.1f)
