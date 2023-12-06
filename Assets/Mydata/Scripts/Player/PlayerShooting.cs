@@ -17,7 +17,7 @@ public class PlayerShooting : MyMonoBehavior
 
     protected virtual void SettingShoot()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && onShoot == true)
+        if (Input.GetKeyUp(KeyCode.Mouse0) && onShoot == true)
         {
             Shooting();
             StartCoroutine(ResetShooter());

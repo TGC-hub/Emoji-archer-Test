@@ -22,11 +22,11 @@ public class InputManager : MonoBehaviour
 
     protected virtual void GetKeyZoom()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             enableZoom = true;
         }
-        if (Input.GetKeyUp(KeyCode.Mouse1))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             enableZoom = false;
         }
