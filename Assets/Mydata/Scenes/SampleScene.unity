@@ -478,8 +478,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.49, y: 1.5, z: 1}
-  m_Center: {x: 0, y: 0.88, z: 0}
+  m_Size: {x: 0.2, y: 1.8, z: 0.3}
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!54 &107964021
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1256,6 +1256,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 143800558}
   - {fileID: 420518423}
+  nextFloor: 0
 --- !u!1 &282635852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,8 +1604,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.49, y: 1.5, z: 1}
-  m_Center: {x: 0, y: 0.88, z: 0}
+  m_Size: {x: 0.2, y: 1.8, z: 0.3}
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!54 &342758534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2137,6 +2138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 736172835}
+  nextFloor: 0
 --- !u!1 &481275515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,7 +2432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b52d3296f62cdc941a4805cd1b223e21, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b52d3296f62cdc941a4805cd1b223e21, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2673,7 +2675,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 917002675}
   - {fileID: 723735292}
-  speed: 1
+  speed: 1.5
   initialSpeed: 0
 --- !u!95 &655256812
 Animator:
@@ -2742,8 +2744,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!114 &655256815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3236,8 +3238,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!95 &722567676
 Animator:
   serializedVersion: 5
@@ -3836,8 +3838,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!114 &840397185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4505,6 +4507,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 899773649}
   - {fileID: 1935183382}
+  nextFloor: 0
 --- !u!1 &1052901997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5113,8 +5116,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!95 &1170400101
 Animator:
   serializedVersion: 5
@@ -5183,6 +5186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 1134897491}
+  nextFloor: 0
 --- !u!1 &1190463482
 GameObject:
   m_ObjectHideFlags: 0
@@ -5712,8 +5716,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!114 &1274566444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6463,8 +6467,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!95 &1373749016
 Animator:
   serializedVersion: 5
@@ -7812,8 +7816,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.49, y: 1.5, z: 1}
-  m_Center: {x: 0, y: 0.88, z: 0}
+  m_Size: {x: 0.2, y: 1.8, z: 0.3}
+  m_Center: {x: 0, y: 0.93, z: 0}
 --- !u!54 &1757726930
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8144,8 +8148,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!114 &1816483549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8241,6 +8245,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 162441346}
   - {fileID: 317306819}
+  nextFloor: 0
 --- !u!1 &1873532163
 GameObject:
   m_ObjectHideFlags: 0
@@ -8611,8 +8616,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 0.5, y: 1.75, z: 0.65}
+  m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!114 &1890346651
 MonoBehaviour:
   m_ObjectHideFlags: 0
